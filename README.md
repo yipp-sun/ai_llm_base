@@ -1,2 +1,2 @@
 # ai
-my first AI repository
+It's my first AI repository.
