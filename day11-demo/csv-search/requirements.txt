@@ -1,4 +1,5 @@
 streamlit<1.30
+pydantic==2.9.2
 pandas
 numpy
 openai
