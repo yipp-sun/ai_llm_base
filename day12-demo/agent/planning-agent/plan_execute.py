@@ -195,3 +195,24 @@ async def main():
 
 # 运行异步函数
 asyncio.run(main())
+
+
+"""
+D:\envs\learn\python.exe D:\Workspace\git\ai_llm_base\day12-demo\agent\planning-agent\plan_execute.py 
+================================ System Message ================================
+
+You are a helpful assistant.
+
+============================= Messages Placeholder =============================
+
+{{messages}}
+D:\Workspace\git\ai_llm_base\day12-demo\agent\planning-agent\plan_execute.py:18: LangGraphDeprecationWarning: Parameter 'messages_modifier' in function 'create_react_agent' is deprecated as of version 0.1.9 and will be removed in version 0.3.0. Use 'state_modifier' parameter instead.
+  agent_executor = create_react_agent(llm, tools, messages_modifier=prompt)
+{'plan': ['搜索2024年巴黎奥运会100米自由泳决赛的结果，以确定冠军姓名。', '一旦知道了冠军的姓名，搜索该运动员的个人信息，以获取有关其家乡的信息。', '记录下该运动员的家乡作为答案。']}
+{'past_steps': [('搜索2024年巴黎奥运会100米自由泳决赛的结果，以确定冠军姓名。', '2024年巴黎奥运会男子100米自由泳决赛的冠军是中国选手潘展乐（Zhanle Pan）。')]}
+{'plan': ['搜索中国选手潘展乐（Zhanle Pan）个人信息，以获取有关其家乡的信息。', '记录下潘展乐的家乡作为答案。']}
+{'past_steps': [('搜索2024年巴黎奥运会100米自由泳决赛的结果，以确定冠军姓名。', '2024年巴黎奥运会男子100米自由泳决赛的冠军是中国选手潘展乐（Zhanle Pan）。'), ('搜索中国选手潘展乐（Zhanle Pan）个人信息，以获取有关其家乡的信息。', '根据搜索结果，中国选手潘展乐（Zhanle Pan）出生于浙江省温州市。因此，潘展乐的家乡是浙江省温州市。')]}
+{'response': '中国选手潘展乐（Zhanle Pan）是2024年巴黎奥运会男子100米自由泳决赛的冠军。他的家乡是浙江省温州市。'}
+
+Process finished with exit code 0
+"""
